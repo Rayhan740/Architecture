@@ -1,0 +1,344 @@
+/* Creating navbar  */
+
+*
+{
+    box-sizing: border-box;
+    margin:0;
+}
+
+ul
+{
+    list-style-type:none;
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    background-color:white;
+    position: relative;
+    top:0;
+    width: 100%;
+}
+
+li 
+{
+    float: left;
+}
+
+li a
+{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'M PLUS 1p', sans-serif;
+
+}
+
+li a:hover 
+{
+    background-color: whitesmoke;
+}
+
+/* making it responsive */
+
+@media screen and (max-width:600px )
+{
+    .none
+    {
+        display: none;
+    }
+}
+
+/* End of the navbar */
+
+/* Using image text */
+
+.hero-image
+{
+    background-image:url("images/howard-bouchevereau-JbpGiafXEi8-unsplash.jpg");
+    background-color: #cccccc;
+    height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.hero-text
+{
+    text-align: center;
+    position:absolute;
+    top:55%;
+    left: 50%;
+    color: white;
+    font-size: 30px;
+    transform: translate(-50%,-50%);
+    font-family: 'M PLUS 1p', sans-serif;
+
+}
+
+.part1
+{
+    background:rgba(0,0,0,0.5);
+    color: whitesmoke;
+    padding: 15px;
+}
+
+
+@media screen and (max-width:600px)
+{
+    .part2
+    {
+        display: none;
+    }
+}
+
+/* Heading end here */
+
+/* project section starts from here */
+
+hr
+{
+   color:   gray;
+   width: 90%;
+   margin-bottom: 50px;
+   transform:translate(5%,5%);
+}
+
+
+/*gallary section starts from here */
+
+.gallary
+{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 50%;
+}
+
+.gallary:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+.desc
+{
+    padding: 2px 16px;
+}
+
+/* gallarty */
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 120px;
+    
+}
+
+
+.container
+{
+    position: relative;
+    text-align: center;
+    color: white;
+    width: 20%;
+    padding: 10px 10px;
+}
+
+.top-left
+{
+  position:absolute;
+  font-size: 20px;
+  top: 10px;
+  left: 10px;
+  color:white;
+  padding:10px;
+  background-color:black;
+}
+
+
+
+.row:after
+{
+    content:'';
+    display:table;
+    clear: both; 
+}
+
+
+
+@media screen and (max-width: 991px)
+{
+    .container
+    {
+       
+        padding: 10px;
+        width: 47%;
+        margin-bottom: 20px;
+    }
+
+    .row
+    {
+    
+        margin:0;
+   
+    }
+}
+
+@media screen and (max-width: 699px)
+{
+    .container
+    {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .row
+    {
+        padding:0;
+        margin:0 -5px;
+    }
+}
+
+
+
+
+/* about section starts from here */
+
+.column
+{
+   float:left;
+   width: 25%;
+   padding:0 10px;
+
+}
+
+.row
+{
+   margin: 0 -5px;
+}
+
+.row:after
+{
+
+ content:"";
+ display: table;
+ clear: both;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* about section end here */
+
+.clearfix:after
+{
+   content: "";
+   display: table;
+   clear: both;
+}
+
+/* end of  gallary */
+
+/* Start of the form */
+input[type='text']
+{
+    margin-left: 60px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+input[type='email']
+{
+    margin-left: 60px;
+    margin-bottom: 10px;
+    width: 90%;
+    padding: 10px;
+}
+
+input[type='submit']
+{
+    margin-left: 60px;
+    margin-bottom: 40px;
+    padding: 10px;
+    color: white;
+    background-color: black; 
+    border-radius: 20px;
+    border: 2px solid salmon;
+}
+
+input[type='submit']:hover
+{  
+    background-color: white;
+    color: black;
+
+}
+
+/* making the form responsive */
+
+@media only screen and (max-width: 670px)
+{ 
+    input[type='text']
+{
+    margin-left: 20px;
+    
+    
+}
+
+input[type='email']
+{
+    margin-left: 20px;
+   
+}
+
+input[type='submit']
+{
+    margin-left: 20px;
+   
+}
+
+}
